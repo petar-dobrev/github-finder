@@ -20,8 +20,14 @@ function About() {
       </p>
       <p className='text-lg text-gray-400'>
         Layout By:
-        <a className='text-white' href='https://twitter.com/hassibmoddasser'>
+        <a className='text-white' href='https://twitter.com/hassibmoddasser' target="_blank" rel="noreferrer">
           Hassib Moddasser
+        </a>
+      </p>
+      <p className='text-lg text-gray-400'>
+        Developed By:
+        <a className='text-white' href='https://github.com/petar-dobrev' target="_blank" rel="noreferrer">
+          Petar Dobrev
         </a>
       </p>
     </>
