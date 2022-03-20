@@ -2,7 +2,7 @@ import { useEffect, useContext } from "react"
 import { useParams, Link } from "react-router-dom"
 import { FaCodepen, FaStore, FaUserFriends, FaUsers } from "react-icons/fa"
 import GitHubContext from "../context/github/GitHubContext"
-import { getUserAndRepos } from "../context/github/GitHubActions"
+import { getUserAndRepos, cleanUserBlogUrl } from "../context/github/GitHubActions"
 import Spinner from "../components/layout/Spinner"
 import RepoList from "../components/repos/RepoList"
 
@@ -97,7 +97,7 @@ function User() {
                 <div className='stat'>
                   <div className='stat-title text-md'>Website</div>
                   <div className='text-lg stat-value'>
-                    <a href={`https://${blog}`} target='_blank' rel='noreferrer'>
+                    <a href={`https://${cleanUserBlogUrl(blog)}`} target='_blank' rel='noreferrer'>
                       {blog}
                     </a>
                   </div>

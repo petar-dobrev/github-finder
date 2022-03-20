@@ -24,3 +24,12 @@ export const getUserAndRepos = async (login) => {
 
   return { user: user.data, repos: repos.data };
 };
+
+export const cleanUserBlogUrl = (url) => {
+  if (url.includes("https://")) {
+    url = url.replace("https://", "");
+  } else if (url.includes("http://")) {
+    url = url.replace("http://", "");
+  }
+  return url;
+};
