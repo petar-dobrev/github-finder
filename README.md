@@ -1,4 +1,4 @@
-# GitHub Finder App (WIP)
+# GitHub Finder App
 
 App for searching and browsing GitHub users developed with React.
 
@@ -15,6 +15,8 @@ App for searching and browsing GitHub users developed with React.
 ## General Info
 
 Web app for searching GitHub users. The main goal of this project was to get familiar with React context and reducer, TailwindCSS, Daisy UI and Axios.
+
+[Live Version](https://pdobrev-github-finder.netlify.app)
 
 ## Technologies
 
