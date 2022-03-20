@@ -28,7 +28,6 @@ function User() {
       location,
       bio,
       blog,
-      websiteUrl,
       twitter_username,
       login,
       html_url,

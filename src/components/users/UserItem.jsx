@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 function UserItem({user : {login, avatar_url}}) {
   return (
-    <aricle className="card shadow-md compact side bg-base-100">
+    <article className="card shadow-md compact side bg-base-100">
         <div className="flex-row items-center space-x-4 card-body">
             <section>
                 <div className="avatar">
@@ -14,15 +14,13 @@ function UserItem({user : {login, avatar_url}}) {
             </section>
             <section>
                 <h2 className="card-title">{login}</h2>
-                <Link className="text-base-content text-opacity-40" to={`/users/${login}`}>Visit Profile</Link>
+                <Link className="text-base-content text-opacity-40" to={`/user/${login}`}>Visit Profile</Link>
             </section>
         </div>
-    </aricle>
+    </article>
   )
 }
 
-UserItem.propTypes = {
-    login: PropTypes.object.isRequired
-}
+
 
 export default UserItem
